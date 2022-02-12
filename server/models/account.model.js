@@ -4,7 +4,9 @@ const AccountSchema = new mongoose.Schema({
     utilities: { type: Number },
     food: {type: Number},
     phoneBill: {type: Number},
-    
+    gas: {type: Number},
+    miscellanious: {type: Number},
+    income: {type: Number}
 }, { timestamps: true });
-module.exports = mongoose.model('Person', PersonSchema);
+module.exports = mongoose.model('Account', AccountSchema);
 
